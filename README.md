@@ -5,7 +5,7 @@
     <strong>A modern, stunning, copy-paste glassmorphism component library built with React & Tailwind CSS.</strong>
   </p>
   <p>
-    <a href="#"><strong>Live Demo</strong></a> · 
+    <a href="https://zentak-glass-ui.netlify.app/"><strong>Live Demo</strong></a> · 
     <a href="https://github.com/akilakeshara/zentak-glass-ui"><strong>GitHub Repo</strong></a>
   </p>
   <br />
@@ -34,7 +34,7 @@ Say goodbye to complex npm packages and rigid component APIs. **Zentak** is an o
 
 Zentak UI is designed to be frictionless.
 
-1. **Browse** – Visit the [Live Demo](#).
+1. **Browse** – Visit the [Live Demo](https://zentak-glass-ui.netlify.app/).
 2. **Preview** – Explore the components grid. Click any component card to open the **Code Viewer Modal**.
 3. **Copy Code** – Review the live interactive preview on the left, and hit the **"Copy Code"** button on the right to grab the raw React JSX string.
 4. **Paste & Go!** – Paste the component anywhere in your Tailwind-enabled React project. Customize freely!
@@ -66,6 +66,13 @@ Zentak Glass UI is open source! Feel free to fork the repository, build your own
 
 ---
 
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
 <div align="center">
   <p>Built with ❤️ using React and Tailwind CSS v4</p>
 </div>
+
