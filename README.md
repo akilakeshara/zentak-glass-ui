@@ -1,78 +1,68 @@
-<div align="center">
-  <br />
-  <h1>✨ Zentak Glass UI</h1>
-  <p>
-    <strong>A modern, stunning, copy-paste glassmorphism component library built with React & Tailwind CSS.</strong>
-  </p>
-  <p>
-    <a href="https://zentak-glass-ui.netlify.app/"><strong>Live Demo</strong></a> · 
-    <a href="https://github.com/akilakeshara/zentak-glass-ui"><strong>GitHub Repo</strong></a>
-  </p>
-  <br />
-  <img src="./public/preview.png" alt="Zentak Glass UI Preview" width="800" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
-  <br /><br />
-</div>
+# Zentak Glass UI 💎
 
-## 🌌 The Future of UI Aesthetics
-Zentak Glass UI pushes the boundaries of modern frontal aesthetics by providing a beautiful, pure glassmorphism design system. 
+[![NPM Version](https://img.shields.io/npm/v/zentak-glass-ui.svg)](https://www.npmjs.com/package/zentak-glass-ui)
+[![NPM Downloads](https://img.shields.io/npm/dt/zentak-glass-ui.svg)](https://www.npmjs.com/package/zentak-glass-ui)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Say goodbye to complex npm packages and rigid component APIs. **Zentak** is an open-source, beautifully crafted collection of UI components that you simply **copy and paste** directly into your React + Tailwind codebase. Total ownership, ultimate customizability, and jaw-dropping visual fidelity.
+A modern, highly customizable glassmorphism UI library built with React and Tailwind CSS. Elevate your next dashboard or client project with stunning, semi-transparent components equipped with smooth transitions and premium aesthetics.
 
----
+## 🌐 Live Demo
 
-## 🚀 Features
+Check out the live interactive playground to view and interact with all components:  
+**[https://zentak-glass-ui.netlify.app](https://zentak-glass-ui.netlify.app)**
 
-- 💧 **Unmatched Glassmorphism:** Deep, semi-transparent layers, powerful backdrop-blurs, subtle white borders, and immersive drop shadows out of the box.
-- 🎨 **Pure Tailwind CSS:** Zero new dependencies or messy CSS files. Everything is styled entirely with standard, highly-readable Tailwind utility classes.
-- ⚡ **Copy-Paste Ready:** No `npm install zentak-ui`. Just browse the live gallery, preview the components, click copy, and paste the raw React code right into your project.
-- 📱 **Fully Responsive:** All layout and component structural grids are flawlessly responsive to shine on desktop, tablet, and mobile displays.
-- 🎨 **Theme-agnostic Base:** Neutral glass tones map beautifully over any vibrant background, image, or gradient you place behind it.
+## 📦 Installation
 
----
+Install the package via npm:
 
-## 🛠️ Quick Start / How to Use
+```bash
+npm install zentak-glass-ui
+```
 
-Zentak UI is designed to be frictionless.
+*Note: Since this library relies on Tailwind CSS for styling, make sure your project has Tailwind CSS installed and configured correctly.*
 
-1. **Browse** – Visit the [Live Demo](https://zentak-glass-ui.netlify.app/).
-2. **Preview** – Explore the components grid. Click any component card to open the **Code Viewer Modal**.
-3. **Copy Code** – Review the live interactive preview on the left, and hit the **"Copy Code"** button on the right to grab the raw React JSX string.
-4. **Paste & Go!** – Paste the component anywhere in your Tailwind-enabled React project. Customize freely!
+## 🚀 Quick Start
 
----
+Import any component and use it directly within your React application. The components are fully responsive right out of the box.
 
-## 📦 Components Included
+```jsx
+import React from 'react';
+import { GlassButton } from 'zentak-glass-ui';
 
-The current stable release of Zentak UI includes meticulously crafted glass-variants for standard UI primitives:
+function App() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 to-fuchsia-900 p-10 flex items-center justify-center">
+      <GlassButton onClick={() => alert('Clicked!')}>
+        Click Me ✨
+      </GlassButton>
+    </div>
+  );
+}
 
-- **Buttons:** Dynamic scale-up on hover with active press-states and inner shimmer effects.
-- **Inputs:** Semi-transparent form fields with beautiful fuchsia-tinted focus rings.
-- **Profile Cards:** Avatar display cards with skeleton layouts and soft background glares.
-- **Toggles:** Completely CSS-driven, smooth animated switches.
-- **Badges:** Colored status indicators (New, Verified, Pending) with subtle tinted glowing blurs.
-- **Toasts:** Non-intrusive notification popups rigged with slide-in animations.
+export default App;
+```
 
----
+## 🧩 Available Components
 
-## 🤝 Contributing
+### Core Elements
+- **GlassButton** — Premium interactive buttons with hover glow effects.
+- **GlassInput** — Semi-transparent text fields with modern focus rings.
+- **GlassToggle** — Smoothly animated toggle switches.
+- **GlassBadge** — Dynamic status badges available in multiple semantic colors.
+- **GlassToast** — Sleek notification and alert popups.
+- **GlassProfile** — User identity cards with gradient avatars.
+- **GlassCard** — Responsive layout containers featuring strong backdrop blurs.
 
-Zentak Glass UI is open source! Feel free to fork the repository, build your own jaw-dropping glassmorphic components, and submit a Pull Request.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingComponent`)
-3. Commit your Changes (`git commit -m 'Add some AmazingComponent'`)
-4. Push to the Branch (`git push origin feature/AmazingComponent`)
-5. Open a Pull Request
-
----
+### Complex UI Blocks
+- **GlassLoginForm** — A fully designed, ready-to-use login panel with input handling layout.
+- **GlassSidebar Navigation** — A vertical dashboard sidebar with active layout states and a user profile footing.
+- **GlassPricing Cards** — A stunning 3-tier pricing table highlighting an emphasized 'Pro' focal tier.
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is open-source and available under the MIT License.
 
 ---
-
-<div align="center">
-  <p>Built with ❤️ using React and Tailwind CSS v4</p>
-</div>
-
+<p align="center">
+  Crafted with ❤️ by Akila Keshara @ Zentak Solutions
+</p>
