@@ -1,8 +1,18 @@
 {
-  "name": "zentak-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "zentak-glass-ui",
+  "version": "1.0.0",
   "type": "module",
+  "main": "dist/zentak-glass-ui.umd.js",
+  "module": "dist/zentak-glass-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zentak-glass-ui.es.js",
+      "require": "./dist/zentak-glass-ui.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +20,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.2"
+  },
+  "peerDependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
@@ -25,6 +37,8 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.2",
     "vite": "^8.0.1"
   }
