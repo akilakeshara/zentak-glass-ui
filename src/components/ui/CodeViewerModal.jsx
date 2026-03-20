@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function CodeViewerModal({ isOpen, onClose, componentData }) {
   const [isCopied, setIsCopied] = useState(false);
+  const [activeTab, setActiveTab] = useState('preview');
 
   // Close on ESC key
   useEffect(() => {
@@ -12,10 +13,11 @@ export default function CodeViewerModal({ isOpen, onClose, componentData }) {
     return () => window.removeEventListener('keydown', handleEsc);
   }, [onClose]);
 
-  // Lock body scroll when open
+  // Lock body scroll when open and reset tab
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      setActiveTab('preview');
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -51,9 +53,25 @@ export default function CodeViewerModal({ isOpen, onClose, componentData }) {
         
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
-          <h2 className="text-2xl font-bold text-white tracking-tight">
-            {componentData.title}
-          </h2>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+            <h2 className="text-2xl font-bold text-white tracking-tight">
+              {componentData.title}
+            </h2>
+            <div className="flex items-center bg-white/5 p-1 rounded-lg border border-white/10">
+              <button 
+                onClick={() => setActiveTab('preview')}
+                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${activeTab === 'preview' ? 'bg-white/20 text-white shadow' : 'text-white/60 hover:text-white'}`}
+              >
+                Preview
+              </button>
+              <button 
+                onClick={() => setActiveTab('code')}
+                className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${activeTab === 'code' ? 'bg-white/20 text-white shadow' : 'text-white/60 hover:text-white'}`}
+              >
+                Code
+              </button>
+            </div>
+          </div>
           <button 
             onClick={onClose}
             className="p-2 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors"
@@ -66,15 +84,17 @@ export default function CodeViewerModal({ isOpen, onClose, componentData }) {
         </div>
 
         {/* Content Layout */}
-        <div className="flex flex-col lg:flex-row flex-1 overflow-hidden">
+        <div className="flex flex-col flex-1 overflow-hidden min-h-[500px]">
           
           {/* Live Preview Area */}
-          <div className="flex-1 p-8 flex items-center justify-center bg-transparent border-b lg:border-b-0 lg:border-r border-white/10 overflow-auto min-h-[300px]">
-            {componentData.component}
+          <div className={`flex-1 p-8 items-center justify-center bg-transparent overflow-auto custom-scrollbar ${activeTab === 'preview' ? 'flex' : 'hidden'}`}>
+            <div className="w-full h-full flex items-center justify-center">
+              {componentData.component}
+            </div>
           </div>
 
           {/* Raw Code Area */}
-          <div className="flex-1 w-full lg:max-w-[50%] relative group flex flex-col bg-[#0d1117]/80 backdrop-blur-xl">
+          <div className={`flex-1 w-full relative group flex-col bg-[#0d1117] backdrop-blur-xl ${activeTab === 'code' ? 'flex' : 'hidden'}`}>
             {/* Copy Button */}
             <div className="absolute top-4 right-4 z-10">
               <button
@@ -101,7 +121,7 @@ export default function CodeViewerModal({ isOpen, onClose, componentData }) {
               </button>
             </div>
 
-            <div className="flex-1 overflow-auto p-6 font-mono text-sm leading-relaxed text-blue-200/90 custom-scrollbar">
+            <div className="flex-1 overflow-auto p-6 font-mono text-sm leading-relaxed text-blue-200/90 custom-scrollbar mt-12">
               <pre>
                 <code>
                   {componentData.code.trim()}
