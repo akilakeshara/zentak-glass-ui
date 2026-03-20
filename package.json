@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:lib": "vite build -c vite.config.lib.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
