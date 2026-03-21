@@ -1,7 +1,7 @@
 # Zentak Glass UI 💎
 
-[![NPM Version](https://img.shields.io/npm/v/zentak-glass-ui.svg)](https://www.npmjs.com/package/zentak-glass-ui)
-[![NPM Downloads](https://img.shields.io/npm/dt/zentak-glass-ui.svg)](https://www.npmjs.com/package/zentak-glass-ui)
+[![NPM Version](https://img.shields.io/npm/v/zentak-glass-ui.svg?cacheBus=1)](https://www.npmjs.com/package/zentak-glass-ui)
+[![NPM Downloads](https://img.shields.io/npm/dt/zentak-glass-ui.svg?cacheBus=1)](https://www.npmjs.com/package/zentak-glass-ui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A modern, highly customizable glassmorphism UI library built with React and Tailwind CSS. Elevate your next dashboard or client project with stunning, semi-transparent components equipped with smooth transitions and premium aesthetics.
