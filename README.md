@@ -6,7 +6,7 @@
 
 A modern, highly customizable glassmorphism UI library built with React and Tailwind CSS. Elevate your next dashboard or client project with stunning, semi-transparent components equipped with smooth transitions and premium aesthetics.
 
-## ✨ What's New (v1.0.1)
+## ✨ What's New (v1.0.2)
 
 - Polished glass background theme with softer glow and smoother motion.
 - Upgraded `GlassSidebar` with expandable hover navigation styling.
@@ -31,7 +31,7 @@ npm install zentak-glass-ui
 If you want to lock to the latest published version:
 
 ```bash
-npm install zentak-glass-ui@1.0.1
+npm install zentak-glass-ui@1.0.2
 ```
 
 Notes:
@@ -95,7 +95,7 @@ npm run build
 ## 🔗 Package
 
 - NPM: **[https://www.npmjs.com/package/zentak-glass-ui](https://www.npmjs.com/package/zentak-glass-ui)**
-- Current release: **1.0.1**
+- Current release: **1.0.2**
 
 ## 📄 License
 
