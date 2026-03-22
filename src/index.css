@@ -6,12 +6,26 @@
   --color-indigo-600: #4f46e5;
   
   --animate-blob: blob 12s ease-in-out infinite;
+  --animate-orb-drift: orb-drift 12s infinite alternate ease-in-out;
+  --animate-orb-live: orb-drift 12s infinite alternate ease-in-out, orb-pulse 8s infinite ease-in-out;
 
   @keyframes blob {
     0% { transform: translate(0px, 0px) scale(1); }
     33% { transform: translate(18px, -28px) scale(1.06); }
     66% { transform: translate(-12px, 14px) scale(0.94); }
     100% { transform: translate(0px, 0px) scale(1); }
+  }
+
+  @keyframes orb-drift {
+    0% { transform: translate(0, 0) scale(0.94); }
+    50% { transform: translate(56px, -26px) scale(1.16); }
+    100% { transform: translate(100px, -50px) scale(1.28); }
+  }
+
+  @keyframes orb-pulse {
+    0% { opacity: 0.34; }
+    50% { opacity: 0.55; }
+    100% { opacity: 0.34; }
   }
 }
 
@@ -23,8 +37,13 @@
   animation-delay: 4s;
 }
 
+@utility animation-delay-6000 {
+  animation-delay: 6s;
+}
+
 @layer base {
   body {
-    @apply m-0 font-sans antialiased text-white bg-gray-950 overflow-x-hidden;
+    @apply m-0 font-sans antialiased text-white overflow-x-hidden;
+    background-color: #090d18;
   }
 }
