@@ -15,6 +15,8 @@ import GlassCard3D from '../components/ui/GlassCard3D';
 import glassCard3DCode from '../components/ui/GlassCard3D.jsx?raw';
 import MagneticButton from '../components/ui/MagneticButton';
 import magneticButtonCode from '../components/ui/MagneticButton.jsx?raw';
+import PasswordInput from '../components/ui/PasswordInput';
+import passwordInputCode from '../components/ui/PasswordInput.jsx?raw';
 
 // --- Code Strings ---
 const codeStrings = {
@@ -644,6 +646,21 @@ export default function ComponentsPage() {
           >
             <div className="w-full max-w-4xl">
               <MagneticButton />
+            </div>
+          </GlassCard>
+
+          {/* Password Input Component */}
+          <GlassCard
+            title="Password Input"
+            className="col-span-1 md:col-span-2 lg:col-span-3 px-6 pt-6 pb-12 min-h-[530px] overflow-hidden"
+            onClick={() => handleOpenModal(
+              'Password Input',
+              <div className="w-full max-w-4xl"><PasswordInput /></div>,
+              passwordInputCode
+            )}
+          >
+            <div className="w-full max-w-4xl pb-6">
+              <PasswordInput />
             </div>
           </GlassCard>
 

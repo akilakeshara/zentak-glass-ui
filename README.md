@@ -13,6 +13,8 @@ A modern, highly customizable glassmorphism UI library built with React and Tail
 - Refined component showcase spacing and sidebar code-preview sync.
 - Added `MagneticButton` with pointer-driven magnetic pull and animated aurora border.
 - Improved `GlassCard3D` so pointer motion responds across the full showcase area.
+- Added `PasswordInput` component with real-time strength validation, caps lock detection, and visual password requirements checklist.
+- Optimized spacing and transitions for tighter, more polished UI across all components.
 - Cleaned unused styles and aligned lint/build health for the current component set.
 
 ## 🌐 Live Demo
@@ -72,6 +74,7 @@ export default App;
 
 ### Complex UI Blocks
 - **GlassLoginForm** — A fully designed, ready-to-use login panel with input handling layout.
+- **PasswordInput** — Advanced password field with real-time strength validation, caps lock detection, and live password requirements checklist.
 - **GlassSidebar Navigation** — A glassy vertical dashboard sidebar with expandable hover behavior and active layout states.
 - **GlassPricing Cards** — A stunning 3-tier pricing table highlighting an emphasized 'Pro' focal tier.
 - **GlassCard3D** — Interactive 3D glass card with full-area mouse movement response.
