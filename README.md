@@ -6,6 +6,12 @@
 
 A modern, highly customizable glassmorphism UI library built with React and Tailwind CSS. Elevate your next dashboard or client project with stunning, semi-transparent components equipped with smooth transitions and premium aesthetics.
 
+## ✨ What's New (v1.0.1)
+
+- Polished glass background theme with softer glow and smoother motion.
+- Upgraded `GlassSidebar` with expandable hover navigation styling.
+- Refined component showcase spacing and sidebar code-preview sync.
+
 ## 🌐 Live Demo
 
 Check out the live interactive playground to view and interact with all components:  
@@ -19,7 +25,15 @@ Install the package via npm:
 npm install zentak-glass-ui
 ```
 
-*Note: Since this library relies on Tailwind CSS for styling, make sure your project has Tailwind CSS installed and configured correctly.*
+If you want to lock to the latest published version:
+
+```bash
+npm install zentak-glass-ui@1.0.1
+```
+
+Notes:
+- This library relies on Tailwind CSS. Ensure Tailwind is installed and configured.
+- `react` and `react-dom` are peer dependencies.
 
 ## 🚀 Quick Start
 
@@ -55,8 +69,13 @@ export default App;
 
 ### Complex UI Blocks
 - **GlassLoginForm** — A fully designed, ready-to-use login panel with input handling layout.
-- **GlassSidebar Navigation** — A vertical dashboard sidebar with active layout states and a user profile footing.
+- **GlassSidebar Navigation** — A glassy vertical dashboard sidebar with expandable hover behavior and active layout states.
 - **GlassPricing Cards** — A stunning 3-tier pricing table highlighting an emphasized 'Pro' focal tier.
+
+## 🔗 Package
+
+- NPM: **[https://www.npmjs.com/package/zentak-glass-ui](https://www.npmjs.com/package/zentak-glass-ui)**
+- Current release: **1.0.1**
 
 ## 📄 License
 
