@@ -2,13 +2,13 @@ import React from 'react';
 import GlassButton from './GlassButton';
 import GlassBadge from './GlassBadge';
 
-export default function GlassPricing({ className = '' }) {
-  const CheckIcon = () => (
-    <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-    </svg>
-  );
+const CheckIcon = () => (
+  <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+  </svg>
+);
 
+export default function GlassPricing({ className = '' }) {
   return (
     <div className={`w-full max-w-6xl mx-auto px-4 py-8 ${className}`}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center lg:gap-10">

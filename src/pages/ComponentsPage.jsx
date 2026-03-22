@@ -13,6 +13,8 @@ import glassSidebarCode from '../components/ui/GlassSidebar.jsx?raw';
 import GlassPricing from '../components/ui/GlassPricing';
 import GlassCard3D from '../components/ui/GlassCard3D';
 import glassCard3DCode from '../components/ui/GlassCard3D.jsx?raw';
+import MagneticButton from '../components/ui/MagneticButton';
+import magneticButtonCode from '../components/ui/MagneticButton.jsx?raw';
 
 // --- Code Strings ---
 const codeStrings = {
@@ -606,11 +608,11 @@ export default function ComponentsPage() {
             className="col-span-1 md:col-span-2 lg:col-span-3 p-6 min-h-[520px] overflow-hidden"
             onClick={() => handleOpenModal(
               '3D Glass Card',
-              <div className="w-full max-w-3xl"><GlassCard3D /></div>,
+              <div className="w-full"><GlassCard3D /></div>,
               glassCard3DCode
             )}
           >
-            <div className="w-full max-w-3xl">
+            <div className="w-full">
               <GlassCard3D />
             </div>
           </GlassCard>
@@ -627,6 +629,21 @@ export default function ComponentsPage() {
           >
             <div className="w-full flex justify-center items-center my-4">
               <GlassLoginForm />
+            </div>
+          </GlassCard>
+
+          {/* Magnetic Button Component */}
+          <GlassCard
+            title="Magnetic Button"
+            className="col-span-1 md:col-span-2 lg:col-span-3 p-6 min-h-[480px] overflow-hidden"
+            onClick={() => handleOpenModal(
+              'Magnetic Button',
+              <div className="w-full max-w-4xl"><MagneticButton /></div>,
+              magneticButtonCode
+            )}
+          >
+            <div className="w-full max-w-4xl">
+              <MagneticButton />
             </div>
           </GlassCard>
 
@@ -667,6 +684,7 @@ export default function ComponentsPage() {
 
       {/* Code Viewer Modal */}
       <CodeViewerModal 
+        key={selectedComponent?.title || 'closed'}
         isOpen={!!selectedComponent} 
         onClose={handleCloseModal} 
         componentData={selectedComponent} 

@@ -11,6 +11,9 @@ A modern, highly customizable glassmorphism UI library built with React and Tail
 - Polished glass background theme with softer glow and smoother motion.
 - Upgraded `GlassSidebar` with expandable hover navigation styling.
 - Refined component showcase spacing and sidebar code-preview sync.
+- Added `MagneticButton` with pointer-driven magnetic pull and animated aurora border.
+- Improved `GlassCard3D` so pointer motion responds across the full showcase area.
+- Cleaned unused styles and aligned lint/build health for the current component set.
 
 ## 🌐 Live Demo
 
@@ -71,6 +74,23 @@ export default App;
 - **GlassLoginForm** — A fully designed, ready-to-use login panel with input handling layout.
 - **GlassSidebar Navigation** — A glassy vertical dashboard sidebar with expandable hover behavior and active layout states.
 - **GlassPricing Cards** — A stunning 3-tier pricing table highlighting an emphasized 'Pro' focal tier.
+- **GlassCard3D** — Interactive 3D glass card with full-area mouse movement response.
+- **MagneticButton** — High-impact magnetic CTA with parallax text and neon border motion.
+
+## 🛠️ Development
+
+Run the project locally:
+
+```bash
+npm run dev
+```
+
+Quality checks:
+
+```bash
+npm run lint
+npm run build
+```
 
 ## 🔗 Package
 

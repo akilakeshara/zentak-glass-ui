@@ -188,3 +188,137 @@
 .glass-sidebar:focus-within .nav-links li:nth-child(5) .text {
   transition-delay: 0.3s;
 }
+
+.magnetic-demo-wrapper,
+.magnetic-demo-wrapper * {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.magnetic-demo-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+.magnetic-demo-content {
+  position: relative;
+  z-index: 1;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 18px;
+}
+
+.magnetic-glass-showcase {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  padding: 34px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.36);
+}
+
+.magnetic-glass-showcase h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.magnetic-glass-showcase p {
+  color: #b9c6dc;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.magnetic-btn {
+  position: relative;
+  padding: 18px 42px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.34);
+  overflow: hidden;
+}
+
+.magnetic-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 500%;
+  background: conic-gradient(from 0deg, transparent 0%, #ff8a00 25%, #007cff 50%, #ff2f92 75%, transparent 100%);
+  transform: translate(-50%, -50%);
+  animation: magneticSpinBorder 3s linear infinite;
+  z-index: -2;
+}
+
+.magnetic-btn::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #0f1016;
+  border-radius: 48px;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+.magnetic-btn:hover::after {
+  background: rgba(15, 16, 22, 0.82);
+}
+
+@keyframes magneticSpinBorder {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.magnetic-btn-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  letter-spacing: 0.04em;
+}
+
+.magnetic-bolt {
+  color: #ff8a00;
+  font-size: 1.14rem;
+  text-shadow: 0 0 16px rgba(255, 138, 0, 0.78);
+}
+
+@media (max-width: 640px) {
+  .magnetic-demo-content {
+    min-height: 300px;
+    padding: 20px 12px;
+  }
+
+  .magnetic-glass-showcase {
+    width: 100%;
+    padding: 30px 18px;
+  }
+
+  .magnetic-glass-showcase h2 {
+    font-size: 1.34rem;
+  }
+
+  .magnetic-btn {
+    padding: 16px 28px;
+  }
+}
+
