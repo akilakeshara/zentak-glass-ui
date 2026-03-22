@@ -11,6 +11,8 @@ import GlassLoginForm from '../components/ui/GlassLoginForm';
 import GlassSidebar from '../components/ui/GlassSidebar';
 import glassSidebarCode from '../components/ui/GlassSidebar.jsx?raw';
 import GlassPricing from '../components/ui/GlassPricing';
+import GlassCard3D from '../components/ui/GlassCard3D';
+import glassCard3DCode from '../components/ui/GlassCard3D.jsx?raw';
 
 // --- Code Strings ---
 const codeStrings = {
@@ -596,6 +598,21 @@ export default function ComponentsPage() {
             )}
           >
             <GlassToast title="System Update" description="Your setup is complete." />
+          </GlassCard>
+
+          {/* 3D Glass Card */}
+          <GlassCard
+            title="3D Glass Card"
+            className="col-span-1 md:col-span-2 lg:col-span-3 p-6 min-h-[520px] overflow-hidden"
+            onClick={() => handleOpenModal(
+              '3D Glass Card',
+              <div className="w-full max-w-3xl"><GlassCard3D /></div>,
+              glassCard3DCode
+            )}
+          >
+            <div className="w-full max-w-3xl">
+              <GlassCard3D />
+            </div>
           </GlassCard>
 
           {/* Login Form Complex Component */}
