@@ -10,3 +10,4 @@ export { default as GlassPricing } from './ui/GlassPricing';
 export { default as GlassCard } from './ui/GlassCard';
 export { default as GlassCard3D } from './ui/GlassCard3D';
 export { default as MagneticButton } from './ui/MagneticButton';
+export { default as PasswordInput } from './ui/PasswordInput';
