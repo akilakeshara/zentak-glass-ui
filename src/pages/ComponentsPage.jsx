@@ -9,6 +9,7 @@ import GlassToast from '../components/ui/GlassToast';
 import CodeViewerModal from '../components/ui/CodeViewerModal';
 import GlassLoginForm from '../components/ui/GlassLoginForm';
 import GlassSidebar from '../components/ui/GlassSidebar';
+import glassSidebarCode from '../components/ui/GlassSidebar.jsx?raw';
 import GlassPricing from '../components/ui/GlassPricing';
 
 // --- Code Strings ---
@@ -618,12 +619,12 @@ export default function ComponentsPage() {
             className="col-span-1 md:col-span-2 lg:col-span-3 flex justify-center p-8 min-h-[700px] overflow-hidden"
             onClick={() => handleOpenModal(
               "Glass Sidebar", 
-              <div className="h-[600px] w-64"><GlassSidebar /></div>,
-              codeStrings.sidebar
+              <div className="h-[600px] w-72"><GlassSidebar /></div>,
+              glassSidebarCode
             )}
           >
             <div className="w-full flex justify-center items-center py-4">
-              <div className="h-[600px]">
+              <div className="h-[600px] w-72">
                 <GlassSidebar />
               </div>
             </div>

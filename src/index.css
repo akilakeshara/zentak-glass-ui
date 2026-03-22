@@ -5,12 +5,12 @@
   --color-fuchsia-600: #c026d3;
   --color-indigo-600: #4f46e5;
   
-  --animate-blob: blob 7s infinite;
+  --animate-blob: blob 12s ease-in-out infinite;
 
   @keyframes blob {
     0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
+    33% { transform: translate(18px, -28px) scale(1.06); }
+    66% { transform: translate(-12px, 14px) scale(0.94); }
     100% { transform: translate(0px, 0px) scale(1); }
   }
 }
@@ -25,6 +25,6 @@
 
 @layer base {
   body {
-    @apply m-0 font-sans antialiased text-white bg-gray-900 overflow-x-hidden;
+    @apply m-0 font-sans antialiased text-white bg-gray-950 overflow-x-hidden;
   }
 }
