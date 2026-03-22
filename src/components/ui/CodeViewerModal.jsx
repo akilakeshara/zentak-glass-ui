@@ -17,7 +17,6 @@ export default function CodeViewerModal({ isOpen, onClose, componentData }) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      setActiveTab('preview');
     } else {
       document.body.style.overflow = 'unset';
     }
