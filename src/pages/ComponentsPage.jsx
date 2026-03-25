@@ -17,6 +17,8 @@ import MagneticButton from '../components/ui/MagneticButton';
 import magneticButtonCode from '../components/ui/MagneticButton.jsx?raw';
 import PasswordInput from '../components/ui/PasswordInput';
 import passwordInputCode from '../components/ui/PasswordInput.jsx?raw';
+import HolographicCard from '../components/ui/HolographicCard';
+import holographicCardCode from '../components/ui/HolographicCard.jsx?raw';
 
 // --- Code Strings ---
 const codeStrings = {
@@ -661,6 +663,21 @@ export default function ComponentsPage() {
           >
             <div className="w-full max-w-4xl pb-6">
               <PasswordInput />
+            </div>
+          </GlassCard>
+
+          {/* Holographic Card Component */}
+          <GlassCard
+            title="Holographic Card"
+            className="col-span-1 md:col-span-2 lg:col-span-3 px-6 pt-6 pb-12 min-h-[530px] overflow-hidden flex flex-col justify-center bg-[#050505]/40"
+            onClick={() => handleOpenModal(
+              'Holographic Card',
+              <div className="w-full flex justify-center py-12"><HolographicCard /></div>,
+              holographicCardCode
+            )}
+          >
+            <div className="w-full h-full flex items-center justify-center py-8">
+              <HolographicCard />
             </div>
           </GlassCard>
 
