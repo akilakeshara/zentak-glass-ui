@@ -6,16 +6,14 @@
 
 A modern, highly customizable glassmorphism UI library built with React and Tailwind CSS. Elevate your next dashboard or client project with stunning, semi-transparent components equipped with smooth transitions and premium aesthetics.
 
-## ✨ What's New (v1.0.2)
+## ✨ What's New (v1.0.4)
 
-- Polished glass background theme with softer glow and smoother motion.
+- **NEW Component**: Added `HolographicCard` ✨ — A stunningly realistic, interactive 3D Visa Platinum card component featuring a double-sided flip animation.
+- Includes a premium icy silver/platinum multi-layered glare that reacts dynamically to your mouse movement across its glassmorphic surface.
+- Features highly realistic dual-sided details including a beautiful SVG EMV chip, magnetic stripe, secure hologram sticker, and signature panel.
+- Polished existing glass background theme with softer glow and smoother motion.
 - Upgraded `GlassSidebar` with expandable hover navigation styling.
-- Refined component showcase spacing and sidebar code-preview sync.
-- Added `MagneticButton` with pointer-driven magnetic pull and animated aurora border.
-- Improved `GlassCard3D` so pointer motion responds across the full showcase area.
-- Added `PasswordInput` component with real-time strength validation, caps lock detection, and visual password requirements checklist.
-- Optimized spacing and transitions for tighter, more polished UI across all components.
-- Cleaned unused styles and aligned lint/build health for the current component set.
+- Added `MagneticButton` and `GlassCard3D` with advanced pointer-driven motions.
 
 ## 🌐 Live Demo
 
@@ -33,7 +31,7 @@ npm install zentak-glass-ui
 If you want to lock to the latest published version:
 
 ```bash
-npm install zentak-glass-ui@1.0.2
+npm install zentak-glass-ui@1.0.4
 ```
 
 Notes:
@@ -73,6 +71,7 @@ export default App;
 - **GlassCard** — Responsive layout containers featuring strong backdrop blurs.
 
 ### Complex UI Blocks
+- **HolographicCard** ✨ — Ultra-realistic, interactive 3D Visa card with a full double-sided flip animation and dynamic metallic reflection glare.
 - **GlassLoginForm** — A fully designed, ready-to-use login panel with input handling layout.
 - **PasswordInput** — Advanced password field with real-time strength validation, caps lock detection, and live password requirements checklist.
 - **GlassSidebar Navigation** — A glassy vertical dashboard sidebar with expandable hover behavior and active layout states.
@@ -98,7 +97,7 @@ npm run build
 ## 🔗 Package
 
 - NPM: **[https://www.npmjs.com/package/zentak-glass-ui](https://www.npmjs.com/package/zentak-glass-ui)**
-- Current release: **1.0.2**
+- Current release: **1.0.4**
 
 ## 📄 License
 
