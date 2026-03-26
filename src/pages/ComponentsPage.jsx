@@ -19,6 +19,8 @@ import PasswordInput from '../components/ui/PasswordInput';
 import passwordInputCode from '../components/ui/PasswordInput.jsx?raw';
 import HolographicCard from '../components/ui/HolographicCard';
 import holographicCardCode from '../components/ui/HolographicCard.jsx?raw';
+import TaskBoard from '../components/ui/TaskBoard';
+import taskBoardCode from '../components/ui/TaskBoard.jsx?raw';
 
 // --- Code Strings ---
 const codeStrings = {
@@ -710,6 +712,21 @@ export default function ComponentsPage() {
           >
             <div className="w-full flex justify-center items-center py-8">
               <GlassPricing />
+            </div>
+          </GlassCard>
+
+          {/* Task Board Component */}
+          <GlassCard 
+            title="Interactive Task Board" 
+            className="col-span-1 md:col-span-2 lg:col-span-3 p-8 min-h-[600px] overflow-hidden"
+            onClick={() => handleOpenModal(
+              "Task Board", 
+              <div className="w-full flex justify-center"><TaskBoard /></div>,
+              taskBoardCode
+            )}
+          >
+            <div className="w-full h-full flex justify-center items-center py-8">
+              <TaskBoard />
             </div>
           </GlassCard>
 

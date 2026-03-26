@@ -1,6 +1,7 @@
 {
   "name": "zentak-glass-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
+  "license": "MIT",
   "type": "module",
   "main": "dist/zentak-glass-ui.umd.js",
   "module": "dist/zentak-glass-ui.es.js",
