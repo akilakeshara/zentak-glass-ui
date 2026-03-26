@@ -6,8 +6,9 @@
 
 A modern, highly customizable glassmorphism UI library built with React and Tailwind CSS. Elevate your next dashboard or client project with stunning, semi-transparent components equipped with smooth transitions and premium aesthetics.
 
-## ✨ What's New (v1.0.4)
+## ✨ What's New (v1.0.5)
 
+- **NEW Component**: Added `TaskBoard` ✨ — An interactive, fully functional daily task management board featuring a beautiful glassmorphic progress bar, custom animated checkboxes, and smooth hover effects.
 - **NEW Component**: Added `HolographicCard` ✨ — A stunningly realistic, interactive 3D Visa Platinum card component featuring a double-sided flip animation.
 - Includes a premium icy silver/platinum multi-layered glare that reacts dynamically to your mouse movement across its glassmorphic surface.
 - Features highly realistic dual-sided details including a beautiful SVG EMV chip, magnetic stripe, secure hologram sticker, and signature panel.
@@ -31,7 +32,7 @@ npm install zentak-glass-ui
 If you want to lock to the latest published version:
 
 ```bash
-npm install zentak-glass-ui@1.0.4
+npm install zentak-glass-ui@1.0.5
 ```
 
 Notes:
@@ -72,6 +73,7 @@ export default App;
 
 ### Complex UI Blocks
 - **HolographicCard** ✨ — Ultra-realistic, interactive 3D Visa card with a full double-sided flip animation and dynamic metallic reflection glare.
+- **TaskBoard** ✨ — An interactive, fully functional daily task management board featuring a beautiful glassmorphic progress bar, custom animated checkboxes, and smooth hover effects.
 - **GlassLoginForm** — A fully designed, ready-to-use login panel with input handling layout.
 - **PasswordInput** — Advanced password field with real-time strength validation, caps lock detection, and live password requirements checklist.
 - **GlassSidebar Navigation** — A glassy vertical dashboard sidebar with expandable hover behavior and active layout states.
@@ -97,7 +99,7 @@ npm run build
 ## 🔗 Package
 
 - NPM: **[https://www.npmjs.com/package/zentak-glass-ui](https://www.npmjs.com/package/zentak-glass-ui)**
-- Current release: **1.0.4**
+- Current release: **1.0.5**
 
 ## 📄 License
 

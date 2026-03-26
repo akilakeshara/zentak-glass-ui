@@ -12,3 +12,4 @@ export { default as GlassCard3D } from './ui/GlassCard3D';
 export { default as MagneticButton } from './ui/MagneticButton';
 export { default as PasswordInput } from './ui/PasswordInput';
 export { default as HolographicCard } from './ui/HolographicCard';
+export { default as TaskBoard } from './ui/TaskBoard';
